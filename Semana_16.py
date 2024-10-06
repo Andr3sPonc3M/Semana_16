@@ -1,4 +1,5 @@
-
+# Semana 16: Manejadores de eventos.
+# Tarea: Aplicación GUI para Gestión de Tareas con Atajos de Teclado.
 
 import tkinter as tk
 from tkinter import messagebox
@@ -31,9 +32,9 @@ class TaskManagerApp:
 
         # Manejo de eventos para la tecla Enter
         self.task_entry.bind('<Return>', lambda event: self.add_task())
-        self.root.bind('<c>', lambda event: self.complete_task())  # Atajo para completar tarea
-        self.root.bind('<Delete>', lambda event: self.delete_task())  # Atajo para eliminar tarea
-        self.root.bind('<Escape>', lambda event: self.root.quit())  # Atajo para cerrar la aplicación
+        self.root.bind('<End>', lambda event: self.complete_task())  # Atajo para completar tarea con la tecla End
+        self.root.bind('<Delete>', lambda event: self.delete_task())  # Atajo para eliminar tarea con la tecla Delete
+        self.root.bind('<Escape>', lambda event: self.root.quit())  # Atajo para cerrar la aplicación con la tecla Escape
 
     # Método para añadir tarea
     def add_task(self):
@@ -68,3 +69,6 @@ if __name__ == "__main__":
     root = tk.Tk()  # Crear la ventana principal
     app = TaskManagerApp(root)  # Instanciar la clase principal
     root.mainloop()  # Iniciar el bucle principal de eventos
+
+# Universidad Estatal Amazónica
+# Andrés Ponce M.
