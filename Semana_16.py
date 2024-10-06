@@ -1,6 +1,7 @@
 # Semana 16: Manejadores de eventos.
 # Tarea: Aplicación GUI para Gestión de Tareas con Atajos de Teclado.
 
+# Importar tkinter
 import tkinter as tk
 from tkinter import messagebox
 
